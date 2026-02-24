@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Shield, ChevronDown, CheckCircle2, RotateCcw, MonitorPlay, BrainCog, TerminalSquare } from 'lucide-react';
+import { Shield, ChevronDown, CheckCircle2, RotateCcw, MonitorPlay, BrainCog, TerminalSquare, Wrench } from 'lucide-react';
 import { courseData, flatLessons } from '../../data/courseData';
 import { useCourseStore } from '../../store/useCourseStore';
 import { cn } from '../../lib/utils';
@@ -138,6 +138,29 @@ export function Sidebar({ isOpen, onClose }) {
                             </div>
                         </div>
                     ))}
+
+                    {/* Toolkit Link */}
+                    <div className="pt-4 mt-4 border-t border-slate-200 dark:border-slate-800/50">
+                        <NavLink
+                            to="/toolkit"
+                            onClick={() => window.innerWidth < 1024 && onClose()}
+                            className={({ isActive }) => cn(
+                                "w-full flex items-center justify-between py-3 px-3 rounded-xl transition-all group",
+                                isActive
+                                    ? "bg-indigo-50 dark:bg-indigo-500/10 border border-indigo-200 dark:border-indigo-500/30 text-indigo-700 dark:text-indigo-400 font-bold"
+                                    : "border border-transparent text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/50 hover:text-indigo-600 dark:hover:text-indigo-400"
+                            )}
+                        >
+                            <div className="flex items-center gap-3">
+                                <Wrench className="w-4 h-4" />
+                                <span className="text-sm">Boîte à Outils OSINT</span>
+                            </div>
+                            <div className="px-2 py-0.5 bg-indigo-100 dark:bg-indigo-500/20 text-[10px] font-bold tracking-wider rounded-md text-indigo-600 dark:text-indigo-400 uppercase">
+                                +50 Outils
+                            </div>
+                        </NavLink>
+                    </div>
+
                 </div >
 
                 {/* Footer Actions */}
