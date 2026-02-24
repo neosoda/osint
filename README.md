@@ -101,3 +101,12 @@ Pour étendre l'application ou l'alimenter, il suffirait de transformer ces appe
 ## 📝 Licence & Auteurs
 
 Dépôt créé et maintenu pour le projet d'E-Learning d'introduction OSINT (Intelligence en Sources Ouvertes) et Sécurité Réseau Offensive. Usage pédagogique exclusif. 
+
+
+## 📘 Référentiel pédagogique (nouveau)
+
+Un référentiel de transformation du contenu en formation de référence est disponible dans :
+
+- [`docs/formation-reference/`](docs/formation-reference/README.md)
+- Audit actuel : [`docs/formation-reference/00-etat-actuel.md`](docs/formation-reference/00-etat-actuel.md)
+- Plan d’amélioration : [`docs/formation-reference/01-plan-amelioration.md`](docs/formation-reference/01-plan-amelioration.md)
