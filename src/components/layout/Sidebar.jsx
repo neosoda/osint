@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Shield, ChevronDown, CheckCircle2, RotateCcw, MonitorPlay, BrainCog, TerminalSquare, Wrench } from 'lucide-react';
+import { Shield, ChevronDown, CheckCircle2, RotateCcw, MonitorPlay, BrainCog, TerminalSquare, Wrench, Search, UserSearch, Building2, Users, Drama, Telescope, FlaskConical, GraduationCap } from 'lucide-react';
 import { courseData, flatLessons } from '../../data/courseData';
 import { useCourseStore } from '../../store/useCourseStore';
 import { cn } from '../../lib/utils';
@@ -8,8 +8,17 @@ import { cn } from '../../lib/utils';
 // Icon Map helper to load imported lucide string names
 const iconMap = {
     Gavel: <Shield className="w-4 h-4" />,
+    Shield: <Shield className="w-4 h-4" />,
     Server: <MonitorPlay className="w-4 h-4" />,
-    Users: <BrainCog className="w-4 h-4" />,
+    Search: <Search className="w-4 h-4" />,
+    UserSearch: <UserSearch className="w-4 h-4" />,
+    Building2: <Building2 className="w-4 h-4" />,
+    Users: <Users className="w-4 h-4" />,
+    BrainCog: <BrainCog className="w-4 h-4" />,
+    Drama: <Drama className="w-4 h-4" />,
+    Telescope: <Telescope className="w-4 h-4" />,
+    FlaskConical: <FlaskConical className="w-4 h-4" />,
+    GraduationCap: <GraduationCap className="w-4 h-4" />,
 };
 
 export function Sidebar({ isOpen, onClose }) {
